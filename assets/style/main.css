@@ -1,3 +1,20 @@
+/* media-query */
+html {
+  font-size: calc(10 * 100vw /375);
+}
+
+@media (min-width:768px) {
+    html {
+      font-size: calc(10 * 100vm / 1920);
+    }
+
+@media (min-width:1920px) {
+    html {
+      font-size: 62.5%;
+    }
+}
+
+
 /* 全体 */
 body {
   margin: 0 22.5rem;
