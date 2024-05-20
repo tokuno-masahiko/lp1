@@ -44,7 +44,7 @@ nav ul li a {
 .nav_logo {
   height: 61px;
   width: 282px;
-  background-color: #007BFF;
+  background: linear-gradient(to right, #007BFF, #4fa6fd);
   border-radius: 1.9063rem;
 }
 .nav_logo a {
