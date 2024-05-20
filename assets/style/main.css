@@ -1,0 +1,55 @@
+/* 全体 */
+body {
+  margin: 0 22.5rem;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li, ol {
+  list-style: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.3125rem;
+
+}
+
+.header_logo {
+  color: #005bac;
+  font: bold 2rem "Poppins";
+}
+
+nav ul{
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  line-height: 3.8125rem;
+}
+
+nav ul li a {
+  /* font: medium 50px "源ノ角ゴシック JP"; */
+  font-size: 1.25rem;
+  font-family:"源ノ角ゴシック JP";
+}
+
+
+.nav_logo {
+  height: 61px;
+  width: 282px;
+  background-color: #007BFF;
+  border-radius: 1.9063rem;
+}
+.nav_logo a {
+  color: #fff;
+  /* border: none; ボーダーなし */
+  font-weight: bold;
+}
+
