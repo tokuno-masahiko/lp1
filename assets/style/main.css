@@ -1,14 +1,15 @@
 /* media-query */
 html {
-  font-size: calc(10 * 100vw /375);
+  font-size: calc(10 * 100vw /375px);
 }
 
 @media (min-width:768px) {
     html {
-      font-size: calc(10 * 100vm / 1920);
+      font-size: calc(10 * 100vw / 1200px);
     }
+}
 
-@media (min-width:1920px) {
+@media (min-width:1200px) {
     html {
       font-size: 62.5%;
     }
@@ -17,8 +18,10 @@ html {
 
 /* 全体 */
 body {
-  margin: 0 22.5rem;
-
+  /* outline: red solid; */
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.75;
+  color: #333333;
 }
 
 a {
@@ -32,41 +35,65 @@ li, ol {
 
 /* header */
 header {
+  width: 100%;
+  height: 10.1rem;
+}
+.header_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6.3125rem;
-
+  width: 120rem;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .header_logo {
   color: #005bac;
-  font: bold 2rem "Poppins";
+  font: bold 3.2rem "Poppins";
 }
 
 nav ul{
   display: flex;
-  gap: 3rem;
+  gap: 4.8rem;
+
   text-align: center;
-  line-height: 3.8125rem;
+  line-height: 2.8;
 }
 
 nav ul li a {
-  /* font: medium 50px "源ノ角ゴシック JP"; */
-  font-size: 1.25rem;
-  font-family:"源ノ角ゴシック JP";
+  font-size: 2rem;
 }
 
 
 .nav_logo {
-  height: 61px;
-  width: 282px;
+  height: 6.1rem;
+  width: 28.2rem;
   background: linear-gradient(to right, #007BFF, #4fa6fd);
-  border-radius: 1.9063rem;
+  border-radius: 3.05rem;
 }
 .nav_logo a {
   color: #fff;
   /* border: none; ボーダーなし */
   font-weight: bold;
+}
+
+/* main */
+
+/* section1 */
+.hero1 {
+  background-image: url(../image/mainvisual.jpg) ;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 65.1rem;
+  /* justify-content: center; /* 水平方向の中央寄せ */
+  /* align-items: center; 垂直方向の中央寄せ */
+  /* text-align: center; テキストを中央寄せ */
+}
+
+.hero1_container {
+  width: 120rem;
+  height: 100%;
+  margin: 0 auto;
 }
 
