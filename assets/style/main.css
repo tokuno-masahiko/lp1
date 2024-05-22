@@ -55,7 +55,6 @@ header {
 nav ul{
   display: flex;
   gap: 4.8rem;
-
   text-align: center;
   line-height: 2.8;
 }
@@ -63,7 +62,6 @@ nav ul{
 nav ul li a {
   font-size: 2rem;
 }
-
 
 .nav_logo {
   height: 6.1rem;
@@ -86,14 +84,78 @@ nav ul li a {
   background-position: center;
   width: 100%;
   height: 65.1rem;
-  /* justify-content: center; /* 水平方向の中央寄せ */
-  /* align-items: center; 垂直方向の中央寄せ */
-  /* text-align: center; テキストを中央寄せ */
 }
 
 .hero1_container {
   width: 120rem;
   height: 100%;
   margin: 0 auto;
+  padding: 8.9rem 1.0rem;
 }
+
+.hero1_logo {
+  display: flex;
+}
+
+.hero1_image {
+  padding: 2rem;
+}
+
+.hero1_school {
+  display: block;
+}
+
+.hero1_num {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero1_hischool {
+  display: block;
+  margin: 3.2rem 0 0;
+}
+
+.hero1_req {
+  display: block;
+}
+
+/* color_btn */
+
+.color_btn ul{
+  display: flex;
+  gap: 4.8rem;
+  text-align: center;
+  line-height: 2.8;
+  justify-content: center;
+  margin: -20px auto;
+}
+
+.color_btn ul li a {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.color_btn ul li:nth-of-type(1) {
+  height: 6.1rem;
+  width: 28.2rem;
+  border-radius: 3.05rem;
+  background-color: #77CB33;
+}
+
+.color_btn ul li:nth-of-type(2) {
+  height: 6.1rem;
+  width: 28.2rem;
+  border-radius: 3.05rem;
+  background-color: #F6AA00;
+}
+
+.color_btn ul li:nth-of-type(3) {
+  height: 6.1rem;
+  width: 28.2rem;
+  border-radius: 3.05rem;
+  background-color: #3AC8AD;
+}
+
+
 
