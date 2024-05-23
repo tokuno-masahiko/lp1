@@ -68,6 +68,7 @@ nav ul li a {
   width: 28.2rem;
   background: linear-gradient(to right, #007BFF, #4fa6fd);
   border-radius: 3.05rem;
+  margin: 0 auto;
 }
 .nav_logo a {
   color: #fff;
@@ -78,7 +79,7 @@ nav ul li a {
 /* main */
 
 /* section1 */
-.hero1 {
+.sec1 {
   background-image: url(../image/mainvisual.jpg) ;
   background-size: contain;
   background-position: center;
@@ -86,36 +87,36 @@ nav ul li a {
   height: 65.1rem;
 }
 
-.hero1_container {
+.sec1_container {
   width: 120rem;
   height: 100%;
   margin: 0 auto;
-  padding: 8.9rem 1.0rem;
+  padding: 8.9rem 4.0rem;
 }
 
-.hero1_logo {
+.sec1_logo {
   display: flex;
 }
 
-.hero1_image {
+.sec1_image {
   padding: 2rem;
 }
 
-.hero1_school {
+.sec1_school {
   display: block;
 }
 
-.hero1_num {
+.sec1_num {
   display: block;
   margin: 0 auto;
 }
 
-.hero1_hischool {
+.sec1_hischool {
   display: block;
   margin: 3.2rem 0 0;
 }
 
-.hero1_req {
+.sec1_req {
   display: block;
 }
 
@@ -127,7 +128,7 @@ nav ul li a {
   text-align: center;
   line-height: 2.8;
   justify-content: center;
-  margin: -20px auto;
+  margin: -2rem auto;
 }
 
 .color_btn ul li a {
@@ -156,6 +157,200 @@ nav ul li a {
   border-radius: 3.05rem;
   background-color: #3AC8AD;
 }
+
+/* sec2 */
+
+.sec2 {
+  width: 116rem;
+  height: 124.2rem;
+  margin: 7.2rem auto ;
+}
+
+.req3 p {
+  text-align: center;
+  font-size: 3.6rem  ;
+  font-weight: bold;
+  margin: 0 0 3.2rem 0;
+}
+
+.choice_req {
+  color: #f11f8d;
+  font-size: 5.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.sec2_point {
+  display: flex;
+  gap: 4.0rem;
+  margin-bottom:4.8rem;
+}
+
+.point_txt p:nth-of-type(1) {
+  color: #f11f8d;
+  font: italic bold 2.8rem "Poppins";
+}
+
+.point_txt p:nth-of-type(1)>span{
+  font-size: 4.2rem;
+}
+
+.point_txt p:nth-of-type(2) {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.point_txt p:nth-of-type(3) {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.etr_section {
+  background-color: #ffeded;
+  margin: 2.4rem 0;
+  width: 100%;
+  height: 23.1rem;
+}
+
+.etr_wrap {
+  width: 40rem;
+  margin: 0 auto;
+  padding: 5.6rem 0;
+}
+
+.etr_txt {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.625;
+  padding-bottom: 2.0rem;
+}
+
+/* section3 */
+.sec3 {
+  width: 116rem;
+  height: 101.1rem;
+  margin: 7.2rem auto;
+}
+
+.sec3_course {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.0;
+  margin-bottom: 3.2rem;
+}
+
+.sec3_tag_logo {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.sec3_tag1 {
+  width: 56rem;
+  height: 7.5rem;
+  background-color: #f2f9ff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.sec3_tag2 {
+  width: 56rem;
+  height: 7.5rem;
+  background-color: #f0f0f0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.sec3_wrap {
+  background-color: #f2f9ff;
+  width: 100%;
+  height: 85.2rem;
+  padding: 3.2rem;
+}
+
+.sec3_logo {
+  display: flex;
+  gap: 3.1rem;
+  justify-content: center;
+}
+
+.sec3_logo:first-child {
+  margin-bottom: 4rem;
+}
+
+.sec3_pic>div {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.sec3_pic>div>span {
+  color: #005BAC;
+}
+
+/* section4 */
+.cost {
+  width: 60rem;
+  height: 62.9rem;
+  margin: 7.2rem auto;
+}
+
+.cost_title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.0;
+  text-align: center;
+}
+
+table {
+  margin-top: 3.5rem;
+  text-align: center;
+  width: 60rem;
+  height:54.5rem;
+  font-size: 1.8rem;
+}
+
+tr {
+  height: 7.8rem;
+}
+
+tbody>tr>td:nth-of-type(2) {
+  color: #f11f8d;
+  font:bold 3.2rem/1.125 "Poppins";
+}
+
+td > span {
+  font-size: 1.8rem;
+  line-height: 2.0;
+}
+
+/* section5 */
+.sec5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #dddddd;
+  width: 192rem;
+  height: 12rem;
+}
+
+footer>p {
+  display: flex;
+  width: 192rem;
+  height: 100%;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  /* text-align: center; テキストの中央揃え */
+  font: 400 1.3rem "Poppins";
+  /* font-size: 1.3rem; */
+}
+
 
 
 
