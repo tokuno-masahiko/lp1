@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link href="./assets/style/main.css" rel="stylesheet" type="text/css" media="all">
-  <script type="text/javascript" src="./assets/script/main.js"></script>
   <title>入学説明会のお申し込み開始 | Kira-Kira Juku</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
   <!-- Google Fontsからフォントをインポート -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,400;0,700;1,700;1,800&display=swap" rel="stylesheet">
   <meta name="description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
 
@@ -24,7 +26,8 @@
 <body>
 
   <!-- header -->
-  <header>
+  <!-- PC画面 -->
+  <header class="pc_header">
     <div class = "header_wrapper">
       <div class = "header_logo">Kira-Kira Juku</div>
       <nav>
@@ -36,7 +39,23 @@
         </ul>
       </nav>
     </div>
-</header>
+  </header>
+
+  <!-- SP画面 -->
+  <header class="sp_header" style="display: none;">
+    <div class = "header_wrapper">
+      <div class = "header_logo">Kira-Kira Juku</div>
+      <i class="bi bi-list"></i>
+    </div>
+      <nav style="display: none;">
+        <ul>
+          <li><a href="#home">選ばれる3つの理由</a></li>
+          <li><a href="#about">コース・目的</a></li>
+          <li><a href="#services">費用</a></li>
+          <li class = "nav_logo"><a href="#contact">入学説明会に申し込む</a></li>
+        </ul>
+      </nav>
+  </header>
 
 <!-- main -->
 <main>
@@ -112,7 +131,7 @@
 
       <!-- section3 -->
       <section>
-        <div class="sec3">
+        <div class="sec3_wrapper1">
           <div class="sec3_course">コース・目的</div>
           <div class="sec3_tag_logo">
             <button class="sec3_tag1">学年別から選ぶ</button>
@@ -137,6 +156,36 @@
               <div class="sec3_pic">
                 <img src="assets/image/pht_cource04.jpg" alt="高校1年生の写真">
                 <div><span>➔</span> 高校1年生</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- タグ切り替え -->
+        <div class="sec3_wrapper2"  style="display:none;">
+          <div class="sec3_course">コース・目的</div>
+          <div class="sec3_tag_logo">
+            <button class="sec3_tag1">学年別から選ぶ</button>
+            <button class="sec3_tag2">目的別から選ぶ</button>
+          </div>
+          <div class="sec3_wrap">
+            <div class="sec3_logo">
+              <div class="sec3_pic">
+                <img src="assets/image/pht_cource05.jpg" alt="難関大学の写真">
+                <div><span>➔</span> 難関大学・医学部合格を目指す</div>
+              </div>
+              <div class="sec3_pic">
+                <img src="assets/image/pht_cource06.jpg" alt="名門私立大学の写真">
+                <div><span>➔</span> 名門私立大学合格を目指す</div>
+              </div>
+            </div>
+            <div class="sec3_logo">
+              <div class="sec3_pic">
+                <img src="assets/image/pht_cource07.jpg" alt="国公立大学の写真">
+                <div><span>➔</span> 国公立大学合格を目指す</div>
+              </div>
+              <div class="sec3_pic">
+                <img src="assets/image/pht_cource08.jpg" alt="海外の大学の写真">
+                <div><span>➔</span> 海外の大学合格を目指す</div>
               </div>
             </div>
           </div>
@@ -221,5 +270,7 @@
         <p>copyright&copy; 2023 Kira-Kira Juku All Rights Reserved.</p>
       </footer>
     </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./assets/script/main.js"></script>
 </body>
 </html>
