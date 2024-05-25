@@ -1,4 +1,13 @@
 $(function(){
+  $(".js_menu_bar").click(function(){
+    const navMenu = $('.sp_nav_menu')
+    if(navMenu.css('display') === 'none'){
+      navMenu.fadeIn();
+    }else{
+      navMenu.fadeOut();
+    }
+  });
+
   $(".sec3_tag2").click(function(){
     $(".sec3_wrapper1").css('display', 'none');
     $(".sec3_wrapper2").css('display', 'block');
