@@ -15,6 +15,7 @@ html {
     }
 }
 
+
 /* SP画面 */
 @media (max-width:767px) {
 
@@ -39,7 +40,7 @@ html {
 
   /* header */
   .header {
-    width: 100vw;
+    width: 37.5rem;
     height: 7.0rem;
     position: fixed;
     top: 0;
@@ -56,9 +57,7 @@ html {
   .header_logo {
     width: 16.6rem;
     height: 3.4rem;
-    color: #005bac;
-    font: bold 2.2rem "Poppins";
-    margin: 1.8rem;
+    margin: 1.8rem 0 1.8rem 1.6rem;
   }
 
   .menu_logo{
@@ -68,20 +67,11 @@ html {
     z-index: 5;
   }
 
-  .menu_logo img:nth-of-type(1) {
-    width: 7.0rem;
-    height: 7.0rem;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .menu_logo img:nth-of-type(2) {
-    position: absolute;
-    top: 2.2rem;
-    left:2.0rem;
-    width: 3.0rem;
-    height: 2.6rem;
-    z-index: 2;
+  .js_menu_bar {
+    background-color: #005bac;
+    width: 7rem;
+    height: 7rem;
+    padding: 2rem;
   }
 
   .pc_nav_menu {
@@ -132,15 +122,16 @@ html {
 
   /* section1 */
 
-  .sec1_container {
+  .section1_container {
     margin-top: 7rem;
-    background-image: url(../image/mainvisual.jpg) ;
+    background-image: url(../image/mainVIsual_sp.jpg) ;
     background-size: cover;
-    background-position: center;
-    padding: 3.4rem 3.1rem;
+    height: 25rem;
+    background-position: right;
+    padding: 3.4rem 0 3.47rem 1.6rem;
   }
 
-  .sec1_logo {
+  .section1_logo {
     display: flex;
   }
 
@@ -148,45 +139,47 @@ html {
     width: 2.4rem;
     height: 6.87rem;
   }
-  .wing {
-    width: 2.4rem;
-    height: 6.87rem;
-  }
 
-  .sec1_txt {
+  .section1_txt {
     font-size: 1.1rem;
+    line-height: 1.45;
   }
 
-  .sec1_num1 {
+  .section1_num1 {
     text-align: center;
     color: #f11f8d;
-    font: italic bold 2.5rem "Poppins";
+    font: italic 800 2.5rem/1.52 "Poppins", sans-serif;
   }
 
-  .sec1_num1 span{
+  .section1_num1 span{
     text-align: center;
     color: #f11f8d;
-    font: italic bold 3.6rem "Poppins";
+    font: italic 800 3.6rem/1.44 "Poppins", sans-serif;
   }
 
-  .sec1_hischool {
-    margin-top: 2.07rem;
+  .section1_hischool {
+    margin-top: 1.8rem;
     font-size: 1.4rem;
+    line-height: 1.6;
   }
 
-  .sec1_req {
+  .section1_req {
     font-size: 2.5rem;
     font-weight: 900;
+    line-height: 1.44;
     color: #005bac;
   }
 
   /* color_btn */
 
+  .color_btn{
+    margin: 2.4rem auto;
+  }
+
   .color_btn ul{
     text-align: center;
     line-height: 2.8;
     justify-content: center;
-    margin: 0 auto;
   }
 
   .color_btn ul li a {
@@ -207,7 +200,7 @@ html {
     height: 4.8rem;
     width: 25.0rem;
     border-radius: 3.05rem;
-    margin: 0.6rem auto;
+    margin: 1.2rem auto;
     background-color: #F6AA00;
   }
 
@@ -219,14 +212,9 @@ html {
     background-color: #3AC8AD;
   }
 
-  /* sec2 */
+  /* section2 */
 
-  .sec2 {
-    width: 37.5rem;
-    margin: 2.4rem auto ;
-  }
-
-  .sec2_container {
+  .section2_container {
     width: 34.3rem;
     margin: 0 auto;
     justify-content: center;
@@ -236,6 +224,7 @@ html {
     text-align: center;
     font-size: 2.8rem;
     font-weight: bold;
+    line-height: 1.28;
     margin-bottom: 2.4rem;
   }
 
@@ -243,17 +232,18 @@ html {
     color: #f11f8d;
     font-size: 4.0rem;
     font-weight: bold;
+    font: 700 4rem/1.44 "Poppins", sans-serif;
   }
 
-  .sec2_point:nth-of-type(3){
+  .section2_point:nth-of-type(3){
     display: none;
   }
 
-  .sec2_point {
+  .section2_point {
     margin-bottom:3.5rem;
   }
 
-  .sec2_point img {
+  .section2_point img {
     width: 34.3rem;
     height: 22.0rem;
   }
@@ -277,19 +267,19 @@ html {
     margin: 1.2rem 0;
   }
 
-  .etr_section {
+  .entry_section {
     background-color: #ffeded;
     margin-top: 6.4rem;
     height: 21.3rem;
   }
 
-  .etr_wrap {
+  .entry_wrap {
     width: 34.3rem;
     margin: 0 auto;
     padding: 3.0rem 0;
   }
 
-  .etr_txt {
+  .entry_txt {
     margin: 0 3.0rem;
     text-align: center;
     font-size: 1.6rem;
@@ -297,11 +287,11 @@ html {
     padding-bottom: 1.6rem;
   }
 
-  .etr_nav ul{
+  .entry_nav ul{
     text-align: center;
   }
 
-  .etr_nav_logo {
+  .entry_nav_logo {
     height: 6.9rem;
     width: 30.5rem;
     background: linear-gradient(to right, #007BFF, #4fa6fd);
@@ -309,7 +299,7 @@ html {
     margin: 0 auto;
   }
 
-  .etr_nav_logo a {
+  .entry_nav_logo a {
     color: #fff;
     font-weight: bold;
     font-size: 2.0rem;
@@ -317,12 +307,12 @@ html {
   }
 
   /* section3 */
-  .sec3 {
+  .section3 {
     width: 100%;
     margin: 0 auto;
   }
 
-  .sec3_course {
+  .section3_course {
     text-align: center;
     font-size: 2.8rem;
     font-weight: bold;
@@ -330,13 +320,13 @@ html {
     margin-bottom: 2.1rem;
   }
 
-  .sec3_tag_logo {
+  .section3_tag_logo {
     display: flex;
     gap: 1.5rem;
     margin: 0 1.6rem;
   }
 
-  .sec3_tag1 {
+  .section3_tag1 {
     width: 16.4rem;
     height: 6.6rem;
     background-color: #f2f9ff;
@@ -345,7 +335,7 @@ html {
     border-radius: 1rem 1rem 0 0;
   }
 
-  .sec3_tag2 {
+  .section3_tag2 {
     width: 16.4rem;
     height: 6.6rem;
     background-color: #f0f0f0;
@@ -355,24 +345,24 @@ html {
     border-radius: 1rem 1rem 0 0;
   }
 
-  .sec3_wrap {
+  .section3_wrap {
     background-color: #f2f9ff;
     width: 37.5rem;
     padding: 1.6rem;
   }
 
-  .sec3_pic img{
+  .section3_pic img{
     width: 34.3rem;
     height: 22rem;
   }
 
-  .sec3_pic>div {
+  .section3_pic>div {
     font-size: 2.0rem;
     font-weight: bold;
     margin-bottom: 2.8rem;
   }
 
-  .sec3_pic>div>span {
+  .section3_pic>div>span {
     color: #005BAC;
   }
 
@@ -411,13 +401,13 @@ html {
   }
 
   /* section5 */
-  .sec5 {
-    width: 78rem;
+  .section5 {
+    width: 100%;
     overflow: hidden;
   }
 
-  .sec5_img1{
-    width: 39.0rem;
+  .section5_img1{
+    width: 37.5rem;
     height: 17.0rem;
     background-image: url(/assets/image/pht_qa01.jpg) ;
     background-size: cover;
@@ -427,8 +417,8 @@ html {
     transition: transform .6s ease;
   }
 
-  .sec5_img2{
-    width: 39.0rem;
+  .section5_img2{
+    width: 37.5rem;
     height: 17.0rem;
     background-image: url(/assets/image/pht_qa02.jpg) ;
     background-size: cover;
@@ -438,7 +428,7 @@ html {
     transition: transform .6s ease;
   }
 
-  .sec5_req {
+  .section5_req {
     font-size: 2.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -447,17 +437,17 @@ html {
     vertical-align: middle;
   }
 
-  .sec5_img1:hover {
+  .section5_img1:hover {
     transform: scale(1.2);
   }
 
-  .sec5_img2:hover {
+  .section5_img2:hover {
     transform: scale(1.2);
   }
 
   footer {
     background-color: #dddddd;
-    width: 39.0rem;
+    width: 37.5rem;
     height: 8.3rem;
     display: table;
   }
@@ -495,7 +485,6 @@ html {
   /* header */
   .header {
     height: 10.1rem;
-    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -511,8 +500,6 @@ html {
   }
 
   .header_logo {
-    color: #005bac;
-    font: bold 3.2rem "Poppins";
     width: 24.5rem;
   }
 
@@ -547,21 +534,20 @@ html {
   /* main */
 
   /* section1 */
-  .sec1 {
+  .section1 {
     margin-top: 10.1rem;
     background-image: url(../image/mainvisual.jpg) ;
     background-size: cover;
     background-position: center;
-    width: 100vw;
   }
 
-  .sec1_container {
+  .section1_container {
     width: 120rem;
     margin: 0 auto;
     padding: 8.9rem 4.0rem;
   }
 
-  .sec1_logo {
+  .section1_logo {
     display: flex;
   }
 
@@ -570,33 +556,33 @@ html {
     height: 15rem;
   }
 
-  .sec1_image {
+  .section1_image {
     padding: 2rem;
   }
 
-  .sec1_txt {
+  .section1_txt {
     font-size: 2.0rem;
   }
 
-  .sec1_num1 {
+  .section1_num1 {
     width: 100%;
     text-align: center;
     color: #f11f8d;
     font: italic bold 5.4rem "Poppins";
   }
 
-  .sec1_num1 span {
+  .section1_num1 span {
     color: #f11f8d;
     font: italic bold 7.4rem "Poppins";
   }
 
-  .sec1_hischool {
+  .section1_hischool {
     display: block;
     margin: 3.2rem 0 0;
     font-size: 3.3rem;
   }
 
-  .sec1_req {
+  .section1_req {
     display: block;
     font-size: 6.0rem;
     font-weight: 900;
@@ -643,9 +629,9 @@ html {
     background-color: #3AC8AD;
   }
 
-  /* sec2 */
+  /* section2 */
 
-  .sec2 {
+  .section2 {
     width: 116rem;
     margin: 7.2rem auto ;
   }
@@ -664,11 +650,11 @@ html {
     line-height: 1.5;
   }
 
-  .sec2_point:nth-of-type(2){
+  .section2_point:nth-of-type(2){
     display: none;
   }
 
-  .sec2_point {
+  .section2_point {
     display: flex;
     gap: 4.0rem;
     margin-bottom:4.8rem;
@@ -698,27 +684,27 @@ html {
     margin: 2rem 0;
   }
 
-  .etr_section {
+  .entry_section {
     background-color: #ffeded;
     margin-top: 2.4rem;
     width: 100%;
     height: 23.1rem;
   }
 
-  .etr_wrap {
+  .entry_wrap {
     width: 40rem;
     margin: 0 auto;
     padding: 5.6rem 0;
   }
 
-  .etr_txt {
+  .entry_txt {
     text-align: center;
     font-size: 1.6rem;
     line-height: 2.625;
     padding-bottom: 2.0rem;
   }
 
-  .etr_nav ul{
+  .entry_nav ul{
     margin: auto 0;
     display: flex;
     gap: 4.8rem;
@@ -726,35 +712,35 @@ html {
     line-height: 2.8;
   }
 
-  .etr_nav_logo a {
+  .entry_nav_logo a {
     font-size: 2rem;
   }
 
-  .etr_nav_logo {
+  .entry_nav_logo {
     height: 6.1rem;
     width: 28.2rem;
     background: linear-gradient(to right, #007BFF, #4fa6fd);
     border-radius: 3.05rem;
     margin: 0 auto;
   }
-  .etr_nav_logo a {
+  .entry_nav_logo a {
     color: #fff;
     font-weight: bold;
   }
 
   /* section3 */
-  .sec3_wrapper1 {
+  .section3_wrapper1 {
     width: 116rem;
     margin: 7.2rem auto;
   }
 
-  .sec3_wrapper2 {
+  .section3_wrapper2 {
     width: 116rem;
     margin: 7.2rem auto;
 
   }
 
-  .sec3_course {
+  .section3_course {
     text-align: center;
     font-size: 3.6rem;
     font-weight: bold;
@@ -762,12 +748,12 @@ html {
     margin-bottom: 3.2rem;
   }
 
-  .sec3_tag_logo {
+  .section3_tag_logo {
     display: flex;
     gap: 3.5rem;
   }
 
-  .sec3_tag1 {
+  .section3_tag1 {
     width: 56rem;
     height: 7.5rem;
     background-color: #f2f9ff;
@@ -777,7 +763,7 @@ html {
     border-radius: 1rem 1rem 0 0;
   }
 
-  .sec3_tag2 {
+  .section3_tag2 {
     width: 56rem;
     height: 7.5rem;
     background-color: #f0f0f0;
@@ -787,34 +773,34 @@ html {
     border-radius: 1rem 1rem 0 0;
   }
 
-  .sec3_wrap {
+  .section3_wrap {
     background-color: #f2f9ff;
     width: 100%;
     padding: 3.2rem;
 
   }
 
-  .sec3_logo {
+  .section3_logo {
     display: flex;
     gap: 3.1rem;
     justify-content: center;
   }
 
-  .sec3_pic img {
+  .section3_pic img {
     width: 53.2rem;
     height: 37.4rem;
   }
 
-  .sec3_logo:first-child {
+  .section3_logo:first-child {
     margin-bottom: 4rem;
   }
 
-  .sec3_pic>div {
+  .section3_pic>div {
     font-size: 2.0rem;
     font-weight: bold;
   }
 
-  .sec3_pic>div>span {
+  .section3_pic>div>span {
     color: #005BAC;
   }
 
@@ -855,14 +841,13 @@ html {
   }
 
   /* section5 */
-  .sec5 {
+  .section5 {
     display: flex;
-    width: 100vw;
     height: 32rem;
     overflow: hidden;
   }
 
-  .sec5_img1{
+  .section5_img1{
     width: 96.0rem;
     height: 100%;
     background-image: url(/assets/image/pht_qa01.jpg) ;
@@ -873,7 +858,7 @@ html {
     transition: transform .6s ease;
   }
 
-  .sec5_img2{
+  .section5_img2{
     width: 96.0rem;
     height: 32.0rem;
     background-image: url(/assets/image/pht_qa02.jpg) ;
@@ -884,15 +869,15 @@ html {
     transition: transform .6s ease;
   }
 
-  .sec5_img1:hover {
+  .section5_img1:hover {
     transform: scale(1.2);
   }
 
-  .sec5_img2:hover {
+  .section5_img2:hover {
     transform: scale(1.2);
   }
 
-  .sec5_req {
+  .section5_req {
     font-size: 3.2rem;
     font-weight: bold;
     color: #ffffff;
@@ -903,13 +888,11 @@ html {
 
   footer {
     background-color: #dddddd;
-    width: 100vw;
     height: 12rem;
   }
 
   footer>p {
     display: flex;
-    width: 100vw;
     height: 100%;
     justify-content: center;
     align-items: center;
