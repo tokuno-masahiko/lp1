@@ -178,7 +178,7 @@ html {
 
   .color_btn ul{
     text-align: center;
-    line-height: 2.8;
+    line-height: 3;
     justify-content: center;
   }
 
@@ -225,7 +225,7 @@ html {
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 1.28;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.7rem;
   }
 
   .choice_req {
@@ -246,48 +246,62 @@ html {
   .section2_point img {
     width: 34.3rem;
     height: 22.0rem;
+    margin-bottom: 1.0rem;
   }
 
   .point_txt p:nth-of-type(1) {
     color: #f11f8d;
-    font: italic bold 2.4rem "Poppins";
+    font: italic 700 2.4rem/1.5 "Poppins", sans-serif;
   }
 
-  .point_txt p:nth-of-type(1)>span{
-    font-size: 3.6rem;
+  .point_blank{
+    font: italic 700 3.2rem/1.125 "Poppins", sans-serif;
   }
 
-  .point_txt p:nth-of-type(2) {
+  .point_focus {
+    font: italic 700 3.6rem/1 "Poppins", sans-serif;
+  }
+
+  .point_title1 {
     font-size: 2.0rem;
     font-weight: bold;
+    line-height: 1.8;
+  }
+
+  .point_title2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 0.4rem;
   }
 
   .point_txt p:nth-of-type(3) {
     font-size: 1.6rem;
-    margin: 1.2rem 0;
+    line-height: 1.75;
+    margin-top: 0.8rem;
   }
 
   .entry_section {
     background-color: #ffeded;
-    margin-top: 6.4rem;
+    margin-top: 3.6rem;
     height: 21.3rem;
   }
 
   .entry_wrap {
     width: 34.3rem;
     margin: 0 auto;
-    padding: 3.0rem 0;
+    padding: 3.8rem 0;
   }
 
   .entry_txt {
-    margin: 0 3.0rem;
+    margin: 0 2.6rem;
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.75;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.1rem;
   }
 
-  .entry_nav ul{
+  .entry_nav{
     text-align: center;
   }
 
@@ -303,20 +317,23 @@ html {
     color: #fff;
     font-weight: bold;
     font-size: 2.0rem;
-    line-height: 3.2;
+    line-height: 3.4;
   }
 
   /* section3 */
   .section3 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 6.1rem;
+    padding-top: 6.4rem;
   }
 
   .section3_course {
     text-align: center;
+    width: 16.7rem;
+    margin: 0 9.6rem 0 11.2rem;
     font-size: 2.8rem;
     font-weight: bold;
-    line-height: 1.0;
+    line-height: 1.286;
     margin-bottom: 2.1rem;
   }
 
@@ -332,6 +349,7 @@ html {
     background-color: #f2f9ff;
     font-size: 1.8rem;
     font-weight: bold;
+    line-height: 2;
     border-radius: 1rem 1rem 0 0;
   }
 
@@ -339,6 +357,7 @@ html {
     width: 16.4rem;
     height: 6.6rem;
     background-color: #f0f0f0;
+    color: #333333;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.5;
@@ -348,7 +367,7 @@ html {
   .section3_wrap {
     background-color: #f2f9ff;
     width: 37.5rem;
-    padding: 1.6rem;
+    padding: 2.8rem 1.6rem;
   }
 
   .section3_pic img{
@@ -359,7 +378,9 @@ html {
   .section3_pic>div {
     font-size: 2.0rem;
     font-weight: bold;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.6rem;
+    margin-top: 0.4rem;
+    line-height: 1.8;
   }
 
   .section3_pic>div>span {
@@ -367,6 +388,7 @@ html {
   }
 
   /* section4 */
+
   .cost {
     width: 37.5rem;
     margin: 6.4rem auto;
@@ -374,8 +396,9 @@ html {
 
   .cost_title {
     font-size: 2.8rem;
+    line-height: 1.286;
     font-weight: bold;
-    text-align: center;
+    margin: 0 14.9rem 2.3rem 16.4rem;
   }
 
   table {
@@ -383,7 +406,6 @@ html {
     text-align: center;
     margin: 0 auto;
     width: 34.3rem;
-    height:45.1rem;
     font-size: 1.6rem;
   }
 
@@ -391,13 +413,27 @@ html {
     height: 6.5rem;
   }
 
+  thead > tr > td {
+    border-right-style:hidden;
+    width: 11.6rem;
+    line-height: 2.25;
+    margin-right: 3.8rem;
+  }
+
+  thead > tr > td:nth-of-type(2) {
+    width: 22.4rem;
+    line-height: 2.25;
+  }
+
   tbody>tr>td:nth-of-type(2) {
     color: #f11f8d;
     font:bold 2.8rem "Poppins";
+    line-height: 2.25;
   }
 
   td > span {
     font-size: 1.6rem;
+    line-height: 2.25;
   }
 
   /* section5 */
@@ -485,6 +521,9 @@ html {
   /* header */
   .header {
     height: 10.1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -493,14 +532,21 @@ html {
 
   .header_wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 120rem;
+    padding: 0 2rem;
     margin: 0 auto;
   }
 
   .header_logo {
-    width: 24.5rem;
+    width: 24.1rem;
+    height: 4.5rem;
+  }
+
+  .header_logo img {
+    width: 100%;
+    height: 100%;
   }
 
   .menu_logo {
@@ -526,9 +572,11 @@ html {
     border-radius: 3.05rem;
     margin: 0 auto;
   }
+
   .pc_nav_logo a {
     color: #fff;
     font-weight: bold;
+    font-size: 2rem;
   }
 
   /* main */
